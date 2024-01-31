@@ -8,10 +8,14 @@ public class App {
        Worker worker = new Worker();
        Drone drone = new Drone();
        
-       output(queen.doYourJob());
-       output(queen.fly());
-       output("-----------------");
+        // ---- 1.Iteration Super-/Subklassen ----//
+
+       pollObj(queen);
+       pollObj(worker);
+       pollObj(drone);
         
+
+       // ---- 2. Iteration Overloading ---/
        output(worker.doYourJob());
        output(worker.fly());
        output("-----------------");
@@ -24,6 +28,26 @@ public class App {
 
 
 
+    }
+
+    private static void pollObj(worker obj){
+        output(obj.doYourJob());
+        output(obj.fly());
+        output("-----------------");
+ 
+    }
+    private static void pollObj(drone obj){
+        output(obj.doYourJob());
+        output(obj.fly());
+        output("-----------------");
+ 
+    }
+
+    private static void pollObj(HoneyBee obj){
+        output(obj.doYourJob());
+        output(obj.fly());
+        output("-----------------");
+ 
     }
 
    
