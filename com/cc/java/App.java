@@ -15,34 +15,11 @@ public class App {
        pollObj(drone);
         
 
-       // ---- 2. Iteration Overloading ---/
-       output(worker.doYourJob());
-       output(worker.fly());
-       output("-----------------");
-
-       output(drone.doYourJob());
-       output(drone.fly());
-       output("-----------------");
-
-
-
-
-
+       // ---- 2. Iteration Overloading ---//
+      
     }
 
-    private static void pollObj(worker obj){
-        output(obj.doYourJob());
-        output(obj.fly());
-        output("-----------------");
- 
-    }
-    private static void pollObj(drone obj){
-        output(obj.doYourJob());
-        output(obj.fly());
-        output("-----------------");
- 
-    }
-
+        // ---- 3 Iteration Polymorphie ---//
     private static void pollObj(HoneyBee obj){
         output(obj.doYourJob());
         output(obj.fly());
